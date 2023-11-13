@@ -2,7 +2,7 @@
 
 The project contains HTML, CSS and Javascript files.
 
-I created the api from the website you provided mocky.io.  The api contains 10 cities and 10 course types.
+I created the api from the website mocky.io. The api contains 10 cities and 10 course types.
 
 index.html file contains the backbone of the webpage.
 
