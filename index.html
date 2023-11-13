@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selim Yaylalı</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>  
+    <header id="main-header">
+      <nav class="navbar">
+        <div class="nav-menu" id="navMenu">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="dummy.html" class="nav-link">Categories</a>
+          <a href="dummy.html" class="nav-link">About</a>
+          <a href="dummy.html" class="nav-link">Contact</a>
+        </div>
+      </nav>
+      <a href="#side-drawer" class="menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+    </header>
+    <aside id="side-drawer">
+      <header>
+        <a href="#" class="menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </header>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="dummy.html">Categories</a>
+          </li>
+          <li>
+            <a href="dummy.html">About</a>
+          </li>
+          <li>
+            <a href="dummy.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main>
+      <section class="appointment-form-section">
+        <form id="appointment-form">
+          <h2 style="font-weight: 900; font-size: 24px;">EDUCATION APPOINTMENT FORM</h2>
+          <input type="text" name="title" id="title" required placeholder="Title"/>
+          <br />
+          <input type="text" id="name" name="name"required placeholder="Your name"/>
+          <br />
+          <input type="email" id="email"name="email" required placeholder="Email"/>
+          <br />
+          <input type="tel" id="phone" name="phone" placeholder="Phone Number"/>
+          <br>
+          <select id="courseType" name="courseType" required>
+            <option value="" disabled selected>Course Type:</option>
+          </select>
+          <br>
+          <select name="city" id="city" required>
+            <option value="" disabled selected>City:</option>
+          </select>
+
+          <label id="location-selection" for="contactMethod">How would you like to be located?</label>
+          <select id="contactMethod" name="contactMethod" required>
+            <option value="phone">By phone</option>
+            <option value="email">By email</option>
+          </select>
+          <br>
+          <select name="hours" id="hours">
+            <option value=""selected disabled>Hours: 8am - 10pm</option>
+            <option value="">8am</option>
+            <option value="">9am</option>
+            <option value="">10am</option>
+            <option value="">11am</option>
+            <option value="">12pm</option>
+            <option value="">1pm</option>
+            <option value="">2pm</option>
+            <option value="">3pm</option>
+            <option value="">4pm</option>
+            <option value="">5pm</option>
+            <option value="">6pm</option>
+            <option value="">7pm</option>
+            <option value="">8pm</option>
+            <option value="">9pm</option>
+            <option value="">10pm</option>
+          </select>
+
+          <section id="terms">
+            <input type="checkbox" name="accept-terms" id="accept-terms" required/>
+            <label for="accept-terms">I agree to the
+              <a href="dummy.html" id="terms-conditions">Terms and Conditions</a></label>
+          </section>
+
+          <a href="submit.html"><button type="submit" class="btn">Request an appointment</button></a>
+        </form>
+      </section>
+    </main>
+    <script src="api.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

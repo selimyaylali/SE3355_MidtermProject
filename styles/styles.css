@@ -1,0 +1,181 @@
+body, h2, form, button, input, select, label {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  background-image: url("/assets/bg-image.jpeg"); 
+  background-size: cover;
+  font-family: "Arial", sans-serif;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #292929; 
+  padding: 1em;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #ffffff; 
+  padding: 0.5em 1em;
+}
+
+.appointment-form-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+}
+
+#appointment-form {
+  background-color: #fff; 
+  padding: 2em;
+  border-radius: 8px;
+  width: 50%; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+h2 {
+  margin-bottom: 1em;
+  color: #080808; 
+}
+
+label {
+  color: rgb(66, 67, 67);
+  display: block;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+input,select{
+  font: inherit;
+  padding: 0.5rem;
+  border: 1px solid rgb(144, 172, 190);
+  border-radius: 4px;
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+}
+
+input:focus{
+  background-color: rgb(217, 227, 247);
+}
+
+.menu-btn {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  display: none;
+}
+
+.menu-btn span {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+}
+
+#side-drawer {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(29, 26, 27);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+#side-drawer:target {
+  display: block;
+}
+
+#side-drawer header {
+  height: 5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 5%;
+}
+
+#side-drawer ul {
+  list-style: none;
+  margin: 0;
+  padding: 4rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#side-drawer li {
+  margin: 1rem;
+}
+
+#side-drawer a {
+  color: rgb(253, 239, 213);
+  font-size: 2rem;
+}
+
+#location-selection{
+  font-size: 1.5rem;
+}
+
+#terms {
+  display: flex;
+  margin-top: 3rem;
+}
+#terms label {
+  margin: 0;
+  margin-left: 0.5rem;
+}
+#terms input {
+  width: auto;
+}
+
+/* Button Design */
+.btn {
+  margin-top: 1rem;
+  box-shadow: inset 0px 0px 1px #000000;
+  background-color: #0a5d90;
+  border-radius: 3px;
+  font: inherit;
+  border: 1px solid rgb(51, 67, 100);
+  pad: 0.5rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  padding: 17px 16px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #263666;
+}
+
+.btn:hover {
+  background-color: #074999;
+}
+
+/* Responsive Design */
+@media (max-width: 48rem) {
+  #main-header .navbar {
+    display: none;
+  }
+
+  .menu-btn {
+    display: flex;
+    margin: 10px;
+  }
+
+  main h1 {
+    font-size: 1.5rem;
+  }
+
+  #latest-products ul {
+    grid-template-columns: 100%;
+  }
+}
