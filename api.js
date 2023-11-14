@@ -1,4 +1,4 @@
-const mockyUrl = 'https://run.mocky.io/v3/bdaf1931-11e6-457f-869b-7da531e97c10';
+const mockyUrl = 'my_api_key';
 
 // function to fetch data from mocky.io and fill the form options
 function fillFormOptions() {
